@@ -164,11 +164,11 @@ layout = html.Div([
 	dcc.Graph(id='company-evolution',
 		figure=fig, style={'width': '900px', 'height': '600px'})], style={'display': 'inline-block'}),
 	html.Div([
-	html.Label('INDEXES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12}),
+	html.Label('INDEXES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12, 'fontFamily': 'Arial, Helvetica, sans-serif'}),
 	dash_table.DataTable(id='table-index',
 				style_header={'backgroundColor': 'darkorange',
 					'color': 'white',
-					'fontWeight': 'bold'
+					'fontWeight': 'bold', 'fontFamily': 'Arial, Helvetica, sans-serif', 'fontSize': 12
 				},
 				style_data={'backgroundColor': 'white',
 					'color': 'grey'
@@ -191,11 +191,11 @@ layout = html.Div([
 				#page_size=10
 	)], style={'display': 'inline-block'}),
 	html.Div([
-	html.Label('COMPANIES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12}),
+	html.Label('COMPANIES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12, 'fontFamily': 'Arial, Helvetica, sans-serif'}),
 	dash_table.DataTable(id='table-company',
 				style_header={'backgroundColor': 'darkorange',
 					'color': 'white',
-					'fontWeight': 'bold'
+					'fontWeight': 'bold', 'fontFamily': 'Arial, Helvetica, sans-serif', 'fontSize': 12
 				},
 				style_data={'backgroundColor': 'white',
 					'color': 'grey'
