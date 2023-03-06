@@ -161,11 +161,11 @@ layout = html.Div([
 	dcc.Graph(id='company-evolution-exchange',
 		figure=fig, style={'width': '900px', 'height': '600px'})], style={'display': 'inline-block'}),
 	html.Div([
-	html.Label('EXCHANGES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12}),
+	html.Label('EXCHANGES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12, 'fontFamily': 'Arial, Helvetica, sans-serif'}),
 	dash_table.DataTable(id='table-index-exchange',
 				style_header={'backgroundColor': 'darkorange',
 					'color': 'white',
-					'fontWeight': 'bold'
+					'fontWeight': 'bold', 'fontFamily': 'Arial, Helvetica, sans-serif', 'fontSize': 12
 				},
 				style_data={'backgroundColor': 'white',
 					'color': 'grey'
@@ -188,11 +188,11 @@ layout = html.Div([
 				#page_size=10
 	)], style={'display': 'inline-block'}),
 	html.Div([
-	html.Label('COMPANIES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12}),
+	html.Label('COMPANIES', style={'fontWeight': 'bold', 'color': 'darkorange', 'fontSize': 12, 'fontFamily': 'Arial, Helvetica, sans-serif'}),
 	dash_table.DataTable(id='table-company-exchange',
 				style_header={'backgroundColor': 'darkorange',
 					'color': 'white',
-					'fontWeight': 'bold'
+					'fontWeight': 'bold', 'fontFamily': 'Arial, Helvetica, sans-serif', 'fontSize': 12
 				},
 				style_data={'backgroundColor': 'white',
 					'color': 'grey'
@@ -210,7 +210,7 @@ layout = html.Div([
 				selected_row_ids=[],
 				#fixed_rows={'headers': True},
 				page_action='none',
-				style_table={'height': '900px', 'width': '1100px', 'overflowY': 'auto'}
+				style_table={'height': '900px', 'width': '1200px', 'overflowY': 'auto'}
 				#page_current=0,
 				#page_size=10
 	)], style={'display': 'inline-block'}),
